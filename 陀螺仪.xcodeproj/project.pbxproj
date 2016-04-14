@@ -14,6 +14,7 @@
 		B7F1F3751B3BF3FA0077C640 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F1F3741B3BF3FA0077C640 /* Images.xcassets */; };
 		B7F1F3781B3BF3FA0077C640 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F1F3761B3BF3FA0077C640 /* LaunchScreen.xib */; };
 		B7F1F3841B3BF3FA0077C640 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F1F3831B3BF3FA0077C640 /* ___Tests.m */; };
+		B7F1F38F1B3BF5670077C640 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F1F38D1B3BF4890077C640 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B7F1F37D1B3BF3FA0077C640 /* 陀螺仪Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "陀螺仪Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F1F3821B3BF3FA0077C640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7F1F3831B3BF3FA0077C640 /* ___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___Tests.m"; sourceTree = "<group>"; };
+		B7F1F38D1B3BF4890077C640 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F1F38F1B3BF5670077C640 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +63,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B75B199D1CBE4C0800FA2087 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				B7F1F38D1B3BF4890077C640 /* CoreMotion.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		B7F1F35B1B3BF3FA0077C640 = {
 			isa = PBXGroup;
 			children = (
+				B75B199D1CBE4C0800FA2087 /* Framework */,
 				B7F1F3661B3BF3FA0077C640 /* 陀螺仪 */,
 				B7F1F3801B3BF3FA0077C640 /* 陀螺仪Tests */,
 				B7F1F3651B3BF3FA0077C640 /* Products */,
@@ -350,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "陀螺仪/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "陀螺仪/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +432,7 @@
 				B7F1F3891B3BF3FA0077C640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7F1F38A1B3BF3FA0077C640 /* Build configuration list for PBXNativeTarget "陀螺仪Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				B7F1F38C1B3BF3FA0077C640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
